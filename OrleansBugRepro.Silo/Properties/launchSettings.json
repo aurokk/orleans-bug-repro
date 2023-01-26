@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "Silo.0": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "GATE_PORT": "32000",
+        "SILO_PORT": "31000"
+      }
+    },
+    "Silo.1": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "GATE_PORT": "32001",
+        "SILO_PORT": "31001"
+      }
+    }
+  }
+}
