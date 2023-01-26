@@ -3,19 +3,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OrleansBugRepro.Interfaces;
 
-const string invariant = "MySql.Data.MySqlConnector";
-
 var host = new HostBuilder()
-    .UseOrleansClient(
-        builder => builder
-            .UseAdoNetClustering(
-                options =>
-                {
-                    options.ConnectionString =
-                        "Server=127.0.0.1;Port=30005;Database=pay;Uid=pay_user;Pwd=pay_password;";
-                    options.Invariant = invariant;
-                }
-            ))
+    .UseOrleansClient(builder => builder.UseLocalhostClustering())
     .Build();
 
 await host.StartAsync();

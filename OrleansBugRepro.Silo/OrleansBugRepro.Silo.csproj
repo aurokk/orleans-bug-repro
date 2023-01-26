@@ -12,7 +12,6 @@
         <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
         <PackageReference Include="Microsoft.Orleans.Clustering.AdoNet" Version="7.0.0" />
         <PackageReference Include="Microsoft.Orleans.Server" Version="7.0.0" />
-        <PackageReference Include="MySqlConnector" Version="2.2.5" />
     </ItemGroup>
 
     <ItemGroup>
